@@ -1,48 +1,48 @@
-# Documentação: Análise de Vendas e Lucratividade
+# Documentation: Sales and Profitability Analysis
 
-### Sumário
-- [Contexto e Visão Geral](#contexto-e-visão-geral)
-- [Visão Geral da Estrutura de Dados](#visão-geral-da-estrutura-de-dados)
-- [Resumo Executivo](#resumo-executivo)
-- [Detalhamento dos Insights](#detalhamento-dos-insights)
-- [Análise Estatística](#análise-estatística)
-- [Recomendações dos Próximos Passos](#recomendações-dos-próximos-passos)
+### Table of Contents
+- [Context and Overview](#context-and-overview)
+- [Data Structure Overview](#data-structure-overview)
+- [Executive Summary](#executive-summary)
+- [Insight Details](#insight-details)
+- [Statistical Analysis](#statistical-analysis)
+- [Next Steps Recommendations](#next-steps-recommendations)
 
-# Contexto e Visão Geral
-A análise foi conduzida para abordar um problema crítico enfrentado pela organização: como otimizar o desempenho das equipes de vendas e identificar os produtos mais lucrativos para maximizar a margem de lucro geral. A crescente competição no mercado e a pressão para manter custos baixos tornam essencial uma abordagem baseada em dados que destaque áreas prioritárias para melhoria. O foco principal está em entender as diferenças de eficiência entre equipes de vendas, as tendências de consumo relacionadas a produtos e como os custos afetam diretamente as margens de lucro. 
+# Context and Overview
+This analysis was conducted to address a critical challenge faced by the organization: optimizing sales team performance and identifying the most profitable products to maximize overall profit margins. Increasing market competition and cost pressures make a data-driven approach essential to highlight priority areas for improvement. The main focus is on understanding efficiency differences among sales teams, consumption trends related to products, and how costs directly impact profit margins.
 
-### Objetivos
+### Objectives
 
-#### Análise de Desempenho de Vendas
-1. Qual é a receita total e a margem de lucro por equipe de vendas?
-2. Quem são os vendedores com melhor desempenho em receita?
-3. Quais produtos possuem as maiores margens de lucro?
+#### Sales Performance Analysis
+1. What is the total revenue and profit margin per sales team?
+2. Who are the top-performing salespeople by revenue?
+3. Which products have the highest profit margins?
 
-#### Análise de Produtos
-4. Quais grupos de produtos geram mais receita?
-5. Qual é a tendência de vendas para diferentes linhas de produtos?
-6. Existem padrões sazonais nas vendas de produtos?
+#### Product Analysis
+4. Which product groups generate the most revenue?
+5. What is the sales trend for different product lines?
+6. Are there seasonal patterns in product sales?
 
-#### Análise de Clientes e Distribuição
-7. Como as vendas se comparam entre os canais de varejo e distribuição?
-8. Qual é o valor médio dos pedidos por equipe de vendas?
-9. Quais equipes de vendas são mais eficientes (receita por transação)?
+#### Customer and Distribution Analysis
+7. How do sales compare between retail and distribution channels?
+8. What is the average order value by sales team?
+9. Which sales teams are the most efficient (revenue per transaction)?
 
-#### Análise de Inventário e Preços
-10. Qual é a elasticidade de preço de diferentes produtos?
-11. Como as variações de custo afetam as margens de lucro?
-12. Quais produtos têm a melhor relação custo-receita?
+#### Inventory and Pricing Analysis
+10. What is the price elasticity of different products?
+11. How do cost variations affect profit margins?
+12. Which products have the best cost-to-revenue ratio?
 
-#### Tendências Sazonais e Elasticidade de Preços
-13. Existem tendências sazonais nas vendas?
-14. Qual é o impacto das mudanças de preço na demanda?
+#### Seasonal Trends and Price Elasticity
+13. Are there seasonal trends in sales?
+14. What is the impact of price changes on demand?
 
-Links relevantes:
-- Dashboard interativo em Power BI [link fictício]
-- Notebook utilizado na análise [link fictício]
+Relevant Links:
+- Interactive Power BI Dashboard [sample link]
+- Analysis Notebook [sample link]
 
-# Visão Geral da Estrutura de Dados
-A base de dados inclui as seguintes colunas principais:
+# Data Structure Overview
+The dataset includes the following key columns:
 - **Data**: Data da venda.
 - **NFe**: Número da Nota Fiscal.
 - **cdProduto**: Código do produto.
@@ -56,60 +56,60 @@ A base de dados inclui as seguintes colunas principais:
 - **CustoUnitario**: Custo unitário do produto.
 - **PrecoUnitario**: Preço unitário de venda.
 
-#### Diagrama de Entidade e Relacionamento (DER)
-*Um diagrama de entidade-relacionamento será incluído futuramente para facilitar a visualização das relações entre os campos.*
+#### Entity-Relationship Diagram (ERD)
+*An entity-relationship diagram will be included in the future to visualize field relationships.*
 
-# Resumo Executivo
+# Executive Summary
 
-Os melhores insights identificados incluem:
-- **Receita e Margem por Equipe**: A equipe de Varejo apresentou a maior receita total, enquanto as distribuidoras tiveram a maior margem de lucro.
-- **Desempenho dos Vendedores**: Isabella Sousa foi a vendedora com maior desempenho, gerando a maior receita acumulada.
-- **Produtos Lucrativos**: Farinhas de Trigo são os produtos com as maiores margens de lucro.
-- **Grupos de Produtos Mais Lucrativos**: Farinhas de Trigo também lideram em receita total, seguidas por Farinhas e Óleos.
-- **Eficiência das Equipes de Vendas**: A equipe de Varejo possui a maior eficiência em receita por transação, com um valor médio de R$ 178,25.
-- **Produtos com Maiores Margens**: Chás e Vinhos Importados se destacam com margens superiores a 79%.
+Key insights identified include:
+- **Revenue and Margin by Team**: The Retail team achieved the highest total revenue, while the Distribution team had the highest profit margin.
+- **Top Salespeople**: Isabella Sousa was the top-performing salesperson, generating the highest cumulative revenue.
+- **Profitable Products**: Farinhas de Trigo had the highest profit margins.
+- **Most Lucrative Product Groups**: Farinhas de Trigo also led in total revenue, followed by Farinhas and Óleos.
+- **Sales Team Efficiency**: The Retail team had the highest revenue per transaction, averaging R$ 178.25.
+- **Highest Margin Products**: Chás and Vinhos Importados had margins exceeding 79%.
 
-#### Gráficos destacados
-1. Gráfico de barras comparando receita e margem por equipe de vendas.
-2. Gráfico de dispersão destacando os melhores vendedores por receita.
-3. Gráfico de setores mostrando a participação de grupos de produtos na margem de lucro.
-4. Gráfico de barras mostrando produtos com maiores margens de lucro.
-5. Gráfico de linha exibindo a tendência de vendas ao longo do tempo.
+#### Highlighted Charts
+1. Bar chart comparing revenue and margin by sales team.
+2. Scatterplot highlighting top-performing salespeople by revenue.
+3. Pie chart showing product group contribution to profit margins.
+4. Bar chart displaying products with the highest profit margins.
+5. Line chart showing sales trends over time.
 
-# Detalhamento dos Insights
+# Insight Details
 
-### Receita e Margem por Equipe de Vendas
-Uma análise detalhada mostra que a equipe de Distribuidoras, apesar de menor em volume de vendas, apresentou uma margem de lucro 15% superior ao Varejo.
+### Revenue and Margin by Sales Team
+A detailed analysis reveals that the Distribution team, despite lower sales volume, achieved a 15% higher profit margin than the Retail team.
 
-### Produtos com Melhores Margens de Lucro
-Farinhas de Trigo contribuíram para 35% do lucro total, destacando-se como uma área de foco para campanhas promocionais. Além disso, Chás apresentaram uma margem de lucro superior a 80%.
+### Most Profitable Products
+Farinhas de Trigo contributed to 35% of the total profit, making it a key focus for promotional campaigns. Additionally, Chás achieved profit margins above 80%.
 
-### Grupos de Produtos Mais Lucrativos
-Produtos relacionados a Farinhas e Óleos continuam sendo os mais lucrativos em termos absolutos, sugerindo alta demanda.
+### Most Lucrative Product Groups
+Products in the Farinhas and Óleos categories remain the most lucrative in absolute terms, indicating high demand.
 
-# Análise Estatística
+# Statistical Analysis
 
-### Estatísticas Descritivas Gerais
+### General Descriptive Statistics
 - **Média (Revenue)**: Valor médio de receita por venda: R$ 5.476,23.
 - **Moda (Grupo Produto)**: Grupo de produtos mais frequentemente vendido: Farinhas de Trigo.
 - **Mediana (Profit)**: Valor mediano de lucro por venda: R$ 2.135,50.
 - **Desvio Padrão (PrecoUnitario)**: Variabilidade no preço unitário: R$ 1,75.
 
-### Análise por Grupos
-- **Grupo Produto com Maior Receita Média**: Chás (R$ 12.500,00 por venda).
-- **Equipe de Vendas Mais Consistente (Menor Desvio Padrão de Receita)**: Online.
-- **Produto com Menor Variabilidade de Preço**: Açúcares.
+### Group Analysis
+- **Product Group with Highest Average Revenue**: Chás (R$ 12.500,00 per sale).
+- **Most Consistent Sales Team (Lowest Revenue Variability)**: Online.
+- **Product with Least Price Variability**: Açúcares.
 
-### Outliers e Tendências
-- **Outliers Identificados**: Vendas de Vinhos Importados apresentaram receitas excepcionalmente altas.
-- **Tendência Geral**: Produtos de consumo básico como Farinhas têm maior volume de vendas, enquanto itens premium como Vinhos têm margens mais altas.
+### Outliers and Trends
+- **Outliers Identified**: Vinhos Importados sales showed exceptionally high revenues.
+- **General Trend**: Basic consumption products like Farinhas have higher sales volumes, while premium items like Vinhos offer higher margins.
 
-Essas análises estatísticas fornecem uma visão ampla e detalhada do desempenho e variabilidade dos dados, oferecendo uma base sólida para decisões estratégicas.
+These statistical analyses provide a comprehensive view of performance and data variability, offering a solid foundation for strategic decisions.
 
-# Recomendações dos Próximos Passos
-1. Expandir os canais de distribuição para aumentar a margem geral de lucro.
-2. Concentrar esforços promocionais em Farinhas de Trigo e produtos com margens similares.
-3. Fornecer treinamentos específicos para vendedores de equipes menos performáticas.
-4. Implementar um sistema de monitoramento contínuo para identificar padrões sazonais e oportunidades futuras.
-5. Explorar parcerias para a comercialização de Chás e Vinhos Importados, que apresentam margens excepcionais.
-6. Otimizar estratégias de preço para produtos com alta elasticidade e margens elevadas, como Chás e Energéticos.
+# Next Steps Recommendations
+1. Expand distribution channels to increase overall profit margins.
+2. Focus promotional efforts on Farinhas de Trigo and similar high-margin products.
+3. Provide specific training for underperforming sales teams.
+4. Implement a continuous monitoring system to identify seasonal patterns and future opportunities.
+5. Explore partnerships for marketing Chás and Vinhos Importados, which offer exceptional margins.
+6. Optimize pricing strategies for products with high elasticity and elevated margins, such as Chás and Energéticos.
